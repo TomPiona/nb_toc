@@ -1,5 +1,6 @@
-nb_toc
-=============
+# nb_toc
+
+Creates internal hyperlinks to make navigating large notebooks quicker.
 
 ## Usage
 
@@ -8,13 +9,18 @@ from nb_toc import generate
 generate('my_notebook.ipynb')
 ```
 
--------------
+It is possible to run this in a notebook while it is open, but make sure that to save beforehand. Possible to use as a pre-commit hook.
 
-## Optional Parameters
+## Optional Parameters for `generate`
 
 Argument | Default Value | Role
 --- | --- | ---
-`title` | 'Table of Contents' | header for TOC cell
-`additional_text` | None | text to go in TOC cell
-indent_size | 4 | amount of indentation for TOC
-ignore_level | 0 | Ignores headers up to this size
+`title` | 'Table of Contents' | Header for TOC cell
+`additional_text` | None | Text at end of TOC cell
+`indent_size` | 8 | Amount of indentation for TOC
+`ignore_lower` | 0 | Ignores headers <= this number
+`ignore_upper` | 7 | Ignores headers >= this number
+
+## Example TOC
+
+![example](images/example.png)
