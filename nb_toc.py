@@ -27,7 +27,7 @@ def __write_nb__(filename, contents):
 def __remove_anchors__(string):
     return re.sub(' <a id=".+"></a>', '', string)
 
-def generate(filename, title='Table of Contents', additional_text=None, indent_size=4, ignore_level=0):
+def generate(filename, title='Table of Contents', additional_text=None, indent_size=8, ignore_lower=0, ignore_upper=7):
 
     notebook = __read_nb__(filename)
 
@@ -46,9 +46,10 @@ def generate(filename, title='Table of Contents', additional_text=None, indent_s
 
                 if c:
                     # figuring out the number of #'s
-                    level = c.group(0).count('#') - ignore_level
+                    level = c.group(0).count('#')
                     
-                    if not level < 0:
+                    if level > ignore_lower and level < ignore_upper:
+                        level = level - ignore_lower - 1
                         # removing newline from end of line
                         if line.endswith('\n'):
                             line = line[:-1]
