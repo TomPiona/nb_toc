@@ -9,7 +9,7 @@ from nb_toc import generate
 generate('my_notebook.ipynb')
 ```
 
-It is possible to run this in a notebook while it is open, but make sure that to save beforehand. Possible to use as a pre-commit hook.
+It is possible to run this in a notebook while it is open, but make sure to save beforehand. Possible to use as a pre-commit hook.
 
 ## Optional Parameters for `generate`
 

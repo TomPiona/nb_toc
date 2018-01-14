@@ -1,0 +1,7 @@
+decorator==4.2.1
+ipython-genutils==0.2.0
+jsonschema==2.6.0
+jupyter-core==4.4.0
+nbformat==4.4.0
+six==1.11.0
+traitlets==4.3.2
