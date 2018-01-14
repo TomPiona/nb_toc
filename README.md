@@ -2,6 +2,12 @@
 
 Creates internal hyperlinks to make navigating large notebooks quicker.
 
+## [Installation](https://pypi.python.org/pypi?:action=display&name=nb_toc&version=0.1.0)
+
+```
+$ pip install nb_toc
+```
+
 ## Usage
 
 ```python
