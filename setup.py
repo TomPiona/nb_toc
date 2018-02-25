@@ -5,7 +5,7 @@ setup(
     version='0.1.1',
     description='Creates a table of contents for Jupyter Notebooks',
     url='https://github.com/tompiona/nb_toc',
-    download_url = 'https://github.com/tompiona/nb_toc/archive/0.1.0.tar.gz',
+    download_url = 'https://github.com/tompiona/nb_toc/archive/0.1.1.tar.gz',
     author='Ronald Walker',
     install_requires=[
           'decorator',
