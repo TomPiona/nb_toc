@@ -1,4 +1,4 @@
-# nb_toc
+# nb_toc (Notebook Table of Contents)
 
 Creates internal hyperlinks to make navigating large notebooks quicker.
 
