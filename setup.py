@@ -1,11 +1,13 @@
 from setuptools import setup
 
+version = '0.1.2'
+
 setup(
     name='nb_toc',
-    version='0.1.1',
+    version=version,
     description='Creates a table of contents for Jupyter Notebooks',
     url='https://github.com/tompiona/nb_toc',
-    download_url = 'https://github.com/tompiona/nb_toc/archive/0.1.1.tar.gz',
+    download_url = 'https://github.com/tompiona/nb_toc/archive/{}.tar.gz'.format(version),
     author='Ronald Walker',
     install_requires=[
           'decorator',
